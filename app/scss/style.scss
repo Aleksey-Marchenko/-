@@ -112,12 +112,6 @@ header {
     }
   }
 }
-svg{
-  stroke: #000;
-}
-.card__black:hover svg{
-  stroke: white;
-}
 
 .card {
   min-height: 225px;
@@ -147,9 +141,9 @@ svg{
     width: 240px;
     height: 310px;
     display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     .offer__btn {
       margin-top: 30px;
       border-radius: 3px;
@@ -167,43 +161,35 @@ svg{
       border: none;
       cursor: pointer;
     }
-     
+
     .card__item__card {
-     
       text-align: center;
       width: 212px;
       height: 219px;
       top: 53px;
-  
+
       overflow: hidden;
       svg {
         margin-bottom: 20px;
         padding-top: 5px;
-      
       }
- 
-  
 
-
-      h3 {
+      #color {
         padding-bottom: 11px;
         font-family: "bold";
         font-size: 18px;
         line-height: 21.24px;
-        color: #313131;
+        border-right: 1px solid #e0e0e0;
+        border-width: 1px;
         text-align: center;
+        color: #313131;
       }
-      p {
-        padding-bottom: 11px;
+      #color__main {
         font-family: "thin";
         font-size: 16px;
         line-height: 21px;
-        color: #333333;
         text-align: center;
-      }
-      h3 {
-        border-right: 1px solid #e0e0e0;
-        border-width: 1px;
+        color: #313131;
       }
     }
   }
@@ -211,15 +197,25 @@ svg{
 .card__item__card:hover {
   overflow: visible;
   transition: all 0.355s ease;
-  background-color: #000;
+  background-color: #181818;
   border-radius: 5px;
   min-height: 310px;
   box-shadow: -1px 1px 9px 2px black;
-  
 }
-.card__item:hover{
+
+.card__item__card:hover svg path {
+  fill: hsl(0, 0%, 89%);
+}
+.card__item__card:hover p {
+  color: hsl(0, 0%, 89%) !important;
+}
+
+.card__item__card:hover h3 {
+  color: hsl(0, 0%, 89%) !important;
+}
+
+.card__item:hover {
   width: 222px;
-  
 }
 .about {
   min-width: 1248px;
