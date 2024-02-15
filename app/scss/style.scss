@@ -217,14 +217,7 @@ header {
 .card__item:hover {
   width: 222px;
 }
-.about {
-  min-width: 1248px;
-  min-height: 522px;
-  background-image: url(../images/accomodate/background\ buttom.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -395,4 +388,62 @@ header {
   padding: 2px 16px;
   background-color: transparent;
   color: white;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 1248px;
+  min-height: 522px;
+  background-image: url(../images/accomodate/background\ buttom.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .about__us{
+    max-width: 50%;
+    .title{
+      font-family: light;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      color: #8BAF13;
+      margin-bottom: -5px;
+    }
+    .subtitle{
+      font-family: medium;
+      font-size: 30px;
+      color: #fff;
+      line-height: 34.8px;
+      margin: 20px 0px 10px;
+    }
+    .color__main {
+      font-family: "thin";
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+    }
+    .more {
+      border-radius: 3px;
+      background-color: #799a0d;
+      padding: 13px 20px;
+      margin-top: 35px;
+      width: 145px;
+      height: 42px;
+      margin-bottom: 25px;
+      color: #ffffff;
+      font-family: "light";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      text-align: center;
+      border: none;
+    }
+    .more:hover{
+      background-color: #657e12;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
 }
