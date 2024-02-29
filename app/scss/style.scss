@@ -43,6 +43,9 @@ header {
     margin-top: 20px;
     font-size: 12px;
     font-family: "thin";
+    .item__menu{
+      cursor: pointer;
+    }
   }
   .header__nav__left {
     display: flex;
